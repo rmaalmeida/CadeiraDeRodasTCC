@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+	
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" >
+	
+       <TextView android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:text="@string/connection"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="16dp"
+           android:textAllCaps="true"
+           android:textStyle="bold"/>
+       
+       <View android:background="@android:color/darker_gray"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"/>
+       
+       <LinearLayout android:layout_width="match_parent"
+           android:layout_height="48dp"
+           android:orientation="horizontal"
+           android:weightSum="10">
+           
+	        <Spinner android:id="@+id/ddlBluetoothDevices"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginTop="8dp"
+	            android:layout_marginBottom="8dp"
+	            android:layout_weight="6"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textAlignment="center"
+	            android:gravity="center_vertical"
+	            android:layout_gravity="center_vertical"/>
+	        
+	        <Button android:id="@+id/btnConnect"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="4"
+	            android:layout_marginTop="4dp"
+	            android:layout_marginBottom="4dp"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:text="@string/connect" />
+	        
+	        <Button android:id="@+id/btnRefresh"
+	            android:layout_width="32dp"
+	            android:layout_height="32dp"
+	            android:layout_marginTop="8dp"
+	            android:layout_marginBottom="8dp"
+	            android:layout_marginRight="16dp"
+	            android:layout_gravity="center"
+	            android:background="@drawable/ic_action_refresh" />
+       </LinearLayout>       
+
+       
+       <TextView android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:text="@string/controls"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="25dp"
+           android:textAllCaps="true"
+           android:textStyle="bold"/>
+   
+       <View android:background="@android:color/darker_gray"
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"/>
+
+       <RelativeLayout android:layout_width="match_parent"
+           android:layout_height="48dp"
+           android:weightSum="10">
+	        
+           <TextView android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:textAppearance="?android:attr/textAppearanceMedium"
+	           android:text="@string/voiceControl"
+	           android:layout_marginLeft="16dp"
+	           android:layout_marginBottom="4dp"
+	           android:layout_marginTop="4dp"
+	           android:layout_alignParentLeft="true"
+	           android:layout_centerVertical="true"/>
+           
+           <Switch android:id="@+id/toggleVoiceControl"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="16dp"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"/>
+           
+      	</RelativeLayout>
+      	
+       
+       <ListView
+           android:id="@+id/listView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingLeft="8dp"
+           android:divider="@null" />
+
+</LinearLayout>
+

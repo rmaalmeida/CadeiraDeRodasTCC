@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ControleCadeiraRodas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="settings">Configurações</string>
+    
+    <string name="connection">Conexão</string>
+    <string name="connect">Conectar</string>
+    <string name="refresh">Atualizar</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="controls">Controles</string>
+    
+    <string name="touchControl">Controle por Toque</string>
+    <string name="accelerometerControl">Controle por Acelerômetro</string>
+    <string name="voiceControl">Controle por Voz</string>
+    
+    <string name="notConnected">O celular não está conectado com a cadeira.</string>
+    
+    <string name="commandForward">Forward</string>
+    <string name="commandStop">Stop</string>
+    <string name="commandBackwards">Backwards</string>
+    <string name="commandLeft">Left</string>
+    <string name="commandRight">Right</string>
+    
+    <string name="connectionLost">Conexão bluetooth perdida.</string>
+    <string name="connected">Conectado</string>
+    <string name="impossibleConnect">Não foi possível se conectar.</string>
+    <string name="impossibleSendData">Não foi possível enviar os comandos. Abortando.</string>
+    
+
+</resources>

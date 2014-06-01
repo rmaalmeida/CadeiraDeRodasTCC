@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout android:id="@+id/notConnectedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <TextView android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notConnected"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView android:id="@+id/forwardButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/arrow_up_float"
+            android:contentDescription="@string/commandForward"
+            android:layout_marginTop="20dp"
+            android:clickable="true"/>
+        
+        <ImageView android:id="@+id/backwardsButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@android:drawable/arrow_down_float"
+            android:contentDescription="@string/commandBackwards"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"/>
+        
+        <ImageView android:id="@+id/rightButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rotate_right"
+            android:contentDescription="@string/commandRight"
+            android:layout_marginRight="20dp"
+            android:clickable="true"/>
+        
+        <ImageView android:id="@+id/leftButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rotate_left"
+            android:contentDescription="@string/commandLeft"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"/>
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

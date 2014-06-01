@@ -1,0 +1,5 @@
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+android:drawable="@android:drawable/arrow_up_float"
+android:fromDegrees="90"
+android:toDegrees="90"
+android:visible="true" />
