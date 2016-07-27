@@ -1,3 +1,5 @@
+//TCC desenvolvido com equipamentos fornecidos pelo edital santos dummond da FAPEMIG
+
 char val; // variable to receive data from the serial port
 int r_motor_n = 5; //PWM control Right Motor - 
 int r_motor_p = 6; //PWM control Right Motor + 
